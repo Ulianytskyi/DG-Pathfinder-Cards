@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    font-family: 'Gabarito', sans-serif;
+    overflow: hidden;
+    touch-action: none;
+}
+
+#info-field {
+    position: absolute;
+    top: 10%;
+}
+
+#touch-field {
+    position: absolute;
+    top: 15%;
+}
+
+.game-container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    grid-gap: 5px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    
+    width: 100px;
+    height: 100px;
+    background-color: ghostwhite;
+    border: 1px solid #ccc;
+    /* cursor: url('cur_grab1.png'), grab; */
+}
+
+.card:active {
+    cursor: url('cur_grab2.png'), grab;
+    background-color: papayawhip;
+}
+
